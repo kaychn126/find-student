@@ -10,6 +10,7 @@ function App() {
     setInputValue(e.target.value);
   };
   const studentList = [
+    "BEGMYRADOVAJANAN",
     '波波',
     '陈思远',
     '储楚',
@@ -66,10 +67,10 @@ function App() {
   };
   return (
     <>
-      <div style={{ padding: 10, alignItems: 'start' }}>
+      <div style={{ alignItems: 'start' }}>
         <div
-          style={{ width: '100%', textAlign: 'left' }}
-        >{`学生名单：${studentList}`}</div>
+          style={{ width: '100%', textAlign: 'left', fontSize: 13 }}
+        >{`全部学生名单：${studentList}`}</div>
         <div style={{ height: '20vh', marginTop: 10 }}>
           <textarea
             type="text"
@@ -83,7 +84,7 @@ function App() {
             }}
           />
           <button
-            style={{ marginTop: 10, width: '100%', backgroundColor: 'red' }}
+            style={{ marginTop: 10, width: '100%', backgroundColor: 'red', color: "white" }}
             onClick={handleSubmit}
           >
             开始查找
