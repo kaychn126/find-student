@@ -57,7 +57,7 @@ function App() {
     const list = [];
     studentList.forEach((student) => {
       if (inputValue.indexOf(student.name) < 0 && inputValue.indexOf(student.alias) < 0) {
-        list.push(student);
+        list.push(student.name);
       }
     });
     setResultList(list);
